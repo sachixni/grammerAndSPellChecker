@@ -1,0 +1,40 @@
+
+    <html>
+    <head>
+        <title>Grammar Check Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            .section { margin-bottom: 20px; }
+            .original-text, .corrected-text { background-color: #f0f0f0; padding: 10px; border-radius: 5px; }
+            .corrections { list-style-type: none; padding: 0; }
+            .correction { background-color: #ffdddd; border: 1px solid #ee8888; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+        </style>
+    </head>
+    <body>
+        <h1>Grammar Check Report</h1>
+        <div class="section">
+            <h2>Original Text:</h2>
+            <div class="original-text">This is the text that needs to be corected. It has a few errrors.</div>
+        </div>
+        <div class="section">
+            <h2>Corrected Text:</h2>
+            <div class="corrected-text">This is the text that needs to be corrected. It has a few errors.</div>
+        </div>
+        <div class="section">
+            <h2>Details of Corrections:</h2>
+            <ul class="corrections">
+    <li class="correction">Offset 34, length 8, Rule ID: MORFOLOGIK_RULE_EN_US
+Message: Possible spelling mistake found.
+Suggestion: corrected
+This is the text that needs to be corected. It has a few errrors.
+                                  ^^^^^^^^</li><li class="correction">Offset 57, length 7, Rule ID: MORFOLOGIK_RULE_EN_US
+Message: Possible spelling mistake found.
+Suggestion: errors
+...that needs to be corected. It has a few errrors.
+                                           ^^^^^^^</li>
+            </ul>
+        </div>
+    </body>
+    </html>
+    
